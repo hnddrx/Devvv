@@ -20,7 +20,7 @@ const Chat = () => {
         "phoneNumber": "+63 906 006 3919",
         "emailAddress": "macayanwren@gmail.com",
         "website": "macayanwren.vercel.app",
-        "stylesheet": "https://webchat-styler-css.botpress.app/prod/8ae25ff7-9a00-4447-bd35-ca102afae173/v2590/style.css",
+        "stylesheet": "https://webchat-styler-css.botpress.app/prod/123f1e52-753c-4580-80a0-ef471e9b3021/v97447/style.css",
         "frontendVersion": "v1",
         "useSessionStorage": true,
         "enableConversationDeletion": true
