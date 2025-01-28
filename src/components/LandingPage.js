@@ -17,7 +17,8 @@ const LandingPage = () => {
   // State for managing typing effect
   const [typedText, setTypedText] = useState("");
   const fullText = "Hello, I'm Wren – a seasoned full-stack web developer with a passion for creating powerful, seamless digital experiences. With expertise in PostgreSQL, Python, XML, Odoo, MongoDB, ReactJS, ExpressJS, and NodeJS, I bring a comprehensive skill set to the table. Let’s collaborate and turn your innovative ideas into cutting-edge solutions!";
-
+    
+  /* use effect to set type text */
   useEffect(() => {
     let index = 0;
     const typeEffect = setInterval(() => {
