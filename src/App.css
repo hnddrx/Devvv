@@ -44,3 +44,28 @@
   width:60vw;
   height:40vh;
 }
+
+.typing {
+  border-right: 3px solid black;
+  padding-right: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40) 1s forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
+

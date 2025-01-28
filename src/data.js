@@ -41,7 +41,7 @@ export const projects = [
     subtitle: "Odoo (Main Developer)",
     description:
       "Lotus is a human resource information systemt that allows you to manage employee records, timekeeping and payroll.",
-    image: "./Projectic.gif",
+    image: "./lotus.png",
     link: "#",
   },
   

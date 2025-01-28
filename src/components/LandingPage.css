@@ -1,0 +1,54 @@
+/* LandingPage.css */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 2s ease-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Typing effect */
+  .typing {
+    border-right: 3px solid black;
+    padding-right: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards, blinkCaret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blinkCaret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
