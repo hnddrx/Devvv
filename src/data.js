@@ -35,4 +35,14 @@ export const projects = [
     image: "./Projectic.gif",
     link: "https://projectic.vercel.app/",
   },
+  {
+    id:'05',
+    title: "Human Resource Information System (Lotus) ",
+    subtitle: "Odoo (Main Developer)",
+    description:
+      "Lotus is a human resource information systemt that allows you to manage employee records, timekeeping and payroll.",
+    image: "./Projectic.gif",
+    link: "#",
+  },
+  
 ];
