@@ -7,7 +7,7 @@ const Projects = () => {
         <>
         <hr className='featurette-divider my-6'/>
         <h2 className='h1-responsive font-weight-bold text-center my-3 landing-text fs-1'>
-                My recent projects
+                My projects
         </h2>
         <div className='container position-static d-flex flex-wrap' id='projects'>
             {projects.map((project) => (
@@ -18,6 +18,7 @@ const Projects = () => {
                         <div className='card-body'>
                             <h5 className='card-title'>{project.title}</h5>
                             <h6 className='card-title fw-light'>{project.subtitle}</h6>
+                            <h6 className='card-title fw-light'>{project.location}</h6>
                             <p className='card-text'>{project.description}</p>
                         </div>
                     </a>

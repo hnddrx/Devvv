@@ -1,279 +1,154 @@
-/* .card{
-width: 49%; 
-margin:5px;
-border:none;
-border-radius: 10px;
+.card {
+  display: flex;
+  width: 49%;
+  margin: 5px;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
 
+.card:hover {
+  transform: translateY(-5px);
 }
-.card :hover{
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px #a19f9f,
-    -5px -5px 20px #e4dede;
-}
-.card-img-top{
-    border-radius: 10px;
-}
- */
 
- .card {
-    display: flex;
-    width: 49%; 
-margin:5px;
-    flex-direction: column;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .card-content {
-    padding: 20px;
-  }
-  
-  .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .card-btn {
-    padding: 10px 20px;
-    background-color: #2f80ed;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .card-btn:hover {
-    background-color: #1c60b3;
-  }
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  padding: 10px 20px;
+  background-color: #2f80ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-btn:hover {
+  background-color: #1c60b3;
+}
+
 .about-me {
-    position: relative;
-    right:60px;
-    border-radius: 80%;
-    width: 380px;
-    border: 5px solid rgb(255, 255, 255);
-  }
-.link{
-    text-decoration: none;
-    color: rgb(46, 44, 78);
-    font-weight: 500;
-}
-.skill-container{
-    background-color: #ffffff;
-    width: 25%; 
-    margin:10px;
-
-}
-.skill-container:hover{
-   
-    border-radius: 40px;
-    background: #fffdfd;
-    box-shadow: 5px 5px 20px#a19f9f,
-             -15px -15px 30px #ffffff;
+  position: relative;
+  border-radius: 50%;
+  width: 380px;
+  border: 5px solid #ffffff;
+  transition: width 0.3s ease-in-out;
 }
 
+.link {
+  text-decoration: none;
+  color: rgb(46, 44, 78);
+  font-weight: 500;
+}
+
+.skill-container {
+  background-color: #ffffff;
+  width: 25%;
+  margin: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.skill-container:hover {
+  border-radius: 40px;
+  box-shadow: 5px 5px 20px #a19f9f, -15px -15px 30px #ffffff;
+}
+
+/* Media Queries */
 @media screen and (max-width: 1200px) {
-    .card{
-        width: 100%; 
-        margin:5px;
-        }
-      
+  .card {
+    width: 100%;
+    margin: 10px 0;
   }
-  @media screen and (max-width: 1000px) {
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 40%; 
-        margin:5px ;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .about-me{
-     position: relative;
-     right: 130px;
-    }
-    
+}
+
+@media screen and (max-width: 1000px) {
+  .skill-container {
+    width: 40%;
+    margin: 10px;
+    border: 1px solid #9e9d9d;
   }
 
-  @media screen and (max-width: 775px) {
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 40%; 
-        margin:5px;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .about-me{
-     position: relative;
-     right: 130px;
-    }
-    input[type = text],input[type=email],textarea[type=text]{
-        width: 450px;
-       }
+}
+
+@media screen and (max-width: 775px) {
+  
+  .skill-container {
+    width:90%
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .card {
+    width: 90%;
+    margin: 10px auto;
   }
 
-  @media screen and (max-width: 529px) {
-    .card{
-        width: 100%;
-        margin:10px auto auto 30px ;
-    }
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 60%; 
-        margin:5px auto;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .about-me{
-        position: relative;
-        right: 0px;
-        width: 190px;
-       }
-       input[type = text],input[type=email],textarea[type=text]{
-        width: 450px;
-       }
-      
+  .skill-container {
+    width:90%
   }
 
-  @media screen and (max-width: 495px) { 
-    .card{ 
-        width: 90%;
-        margin: 10px auto;
-    } 
-    input[type = text],input[type=email],textarea[type=text]{
-     width: 410px;
-    }
-    .fw-normal{
-     font-size: 17px;
-    }
-    .paragraph{
-     font-size: 12px ;
-    }
-       
-   }
-   @media screen and (max-width: 475px) { 
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 80%; 
-        margin:5px auto;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .card{ 
-        width: 90%;
-        margin: 10px auto;
-    } 
-    input[type = text],input[type=email],textarea[type=text]{
-     width: 390px;
-    }
-    .fw-normal{
-     font-size: 17px;
-    }
-    .paragraph{
-     font-size: 12px ;
-    }
-       
-   }
+}
 
-  @media screen and (max-width: 435px) {  
-   input[type = text],input[type=email],textarea[type=text]{
-    width: 350px;
-   }
-   .fw-normal{
-    font-size: 17px;
-   }
-   .paragraph{
-    font-size: 12px ;
-   }
-      
+@media screen and (max-width: 390px) {
+  .skill-container {
+    width: 90%;
   }
-  @media screen and (max-width: 390px) {
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 90%; 
-        margin:auto;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .about-me{
-        position: relative;
-        right: 15px;
-        width: 160px;
-       }
-   input[type = text],input[type=email],textarea[type=text]{
-    width: 310px;
-   }
-   .fw-normal{
-    font-size: 17px;
-   }
-   .paragraph{
-    font-size: 12px ;
-   }
-      
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 310px;
   }
-  @media screen and (max-width: 330px) {
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 90%; 
-        margin:auto;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .about-me{
-        position: relative;
-        right: 15px;
-        width: 160px;
-       }
-   input[type = text],input[type=email],textarea[type=text]{
-    width: 240px;
-   }
-   .fw-normal{
-    font-size: 17px;
-   }
-   .paragraph{
-    font-size: 12px ;
-   }
-      
+}
+
+@media screen and (max-width: 330px) {
+  .skill-container {
+    width: 90%;
   }
-  @media screen and (max-width: 245px) {
-    .skill-container{
-        background-color: white;
-        border-radius:5px ;
-        width: 90%; 
-        margin:auto;
-        border: 1px solid rgb(158, 157, 157);
-    }
-    .about-me{
-        position: relative;
-        right: 15px;
-        width: 160px;
-       }
-   input[type = text],input[type=email],textarea[type=text]{
-    width: 220px;
-   }
-   .fw-normal{
-    font-size: 17px;
-   }
-   .paragraph{
-    font-size: 12px ;
-   }
-      
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 240px;
   }
+}
+
+@media screen and (max-width: 245px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 220px;
+  }
+}

@@ -3,7 +3,7 @@
 import { Route, Routes } from 'react-router';
 //*Pages
 import Homepage from './pages/Homepage';
-import AboutMe from './pages/AboutMe';
+
 //chess
 import Chess from './components/PlayRandomEngine'
 
@@ -14,7 +14,6 @@ function App() {
     <div className=''>
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/about_me' element={<AboutMe />} />
         <Route path='/chess' element={<Chess />} />
       </Routes>
       <Chat />

@@ -52,12 +52,12 @@ const swalSuccess = () =>{
 }
 //NOTE: emailJs
 const sendEmail = () => {
-      emailjs.sendForm('service_trped2r', 'template_3g1xdci', form.current, 'er57-VUb-cWBsMCcf').then((result) => {
+      emailjs.sendForm('service_p9rwddi', 'template_3g1xdci', form.current, 'er57-VUb-cWBsMCcf').then((result) => {
       //console.log(result.text);
   }, (error) => {
       //console.log(error.text);
   });
-}
+} 
 
   return (
     <div className='container bg-contact' id='contact'>
@@ -75,7 +75,7 @@ const sendEmail = () => {
         <div className='lg-5 col-md-2 text-center'>
             <ul className='list-unstyled mb-0'>
               <li>
-              <a  href={require('../assets/WrenMacayan_FullStackDev_MERN_2022.pdf')} download='WrenMacayan_Resume' target='_blank' rel='noreferrer'  className='link-dark text-decoration-none'>
+              <a  href={require('../assets/Macayan-Wren-Hendrick-Lozano-Resume-2025.pdf')} download='Macayan-Wren-Resume-2025' target='_blank' rel='noreferrer'  className='link-dark text-decoration-none'>
                 <Icon.CloudDownloadFill size={30} />
                   <p>Download my Résumé</p>
                 </a>
